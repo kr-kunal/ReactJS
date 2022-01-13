@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+// import NewUserList from './components/WithHooks/NewUserList';
+import DataFetch from './components/WithHooks/DataFetch';
+// import Counter from './components/WithHooks/Counter';
+// import StateDiff from './components/WithHooks/StateDiff';
+// import UseContext from './components/ContextEx/UseContext';
+// import UserList from './components/UserList';
+// import PostDemo from './components/PostDemo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container h4 mt-3">
+      {/* <UserList/> */}
+      {/* <PostDemo/> */}
+      {/* <NewUserList/>  */}
+      {/* <Counter/> */}
+      {/* <StateDiff/> */}
+      {/* <UseContext/> */}
+      <DataFetch/>
     </div>
   );
 }
