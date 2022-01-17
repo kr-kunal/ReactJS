@@ -1,29 +1,32 @@
 import React, { useState, useEffect } from "react";
+import { Btn } from "../StylesElement/Button";
+
 
 function Counter() {
     const [countUp, setCountUp] = useState(0);
     const [countDown, setCountDown] = useState(50);
 
-    useEffect(() =>{
+    useEffect(() => {
         console.log('useEffect Call');
     }, [countUp])
 
     return (
         <div className="container mt-4">
             <h2>Count Up : {countUp}</h2>
-            <button
-                className="btn btn-md btn-primary mt-3"
-                onClick={() => setCountUp( countUp + 1)}
+            <Btn
+                className=""
+                onClick={() => setCountUp(countUp + 1)}
             >
                 Increment
-            </button>
+            </Btn>
             <h2>Count Down : {countDown}</h2>
-            <button
-                className="btn btn-md btn-primary mt-3"
+            <Btn varient="down"
+                className=""
                 onClick={() => setCountDown(countDown - 1)}
             >
                 Decrement
-            </button>
+            </Btn>
+
         </div>
     );
 }
